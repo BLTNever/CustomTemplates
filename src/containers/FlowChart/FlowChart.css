@@ -1,0 +1,12 @@
+.chartBtn {
+    width: 112px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background-color: #01adea;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}

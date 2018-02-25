@@ -1,0 +1,481 @@
+{
+    "buttons": {
+        "wechat": {
+            "name": "微信扫码",
+            "max": 1,
+            "group": "action",
+            "type": "action",
+            "visible": true,
+            "next": [
+                "loadingPage"
+            ]
+        },
+        "displayAuthorization": {
+            "name": "显示授权",
+            "max": 1,
+            "group": "action",
+            "type": "action",
+            "next": [
+                "isDraw",
+                "isSelfScan",
+                "isNewOne",
+                "isFollow"
+            ],
+            "exclude": [
+                "silentAuthorization"
+            ]
+        },
+        "silentAuthorization": {
+            "name": "不显示授权",
+            "max": 1,
+            "group": "action",
+            "type": "action",
+            "next": [
+                "isDraw",
+                "isSelfScan",
+                "isNewOne",
+                "isFollow"
+            ],
+            "exclude": [
+                "displayAuthorization"
+            ]
+        },
+        "luckDraw": {
+            "name": "直接抽奖",
+            "max": 1,
+            "group": "action",
+            "type": "action",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "scanLuckDrawPage",
+                "scanSlotMachineDrawPage",
+                "scanRotaryDrawPage",
+                "scanSquareDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "end": {
+            "name": "结束",
+            "max": -1,
+            "group": "action",
+            "type": "action"
+        },
+        "loadingPage": {
+            "name": "加载页",
+            "max": 1,
+            "group": "base",
+            "type": "page",
+            "next": [
+                "blankPage",
+                "productSecurityPage",
+                "productTraceabilityPage",
+                "displayAuthorization",
+                "silentAuthorization",
+                "rulePage",
+                "end"
+            ]
+        },
+        "productSecurityPage": {
+            "name": "防伪页",
+            "max": 1,
+            "group": "base",
+            "type": "page"
+        },
+        "productTraceabilityPage": {
+            "name": "溯源页",
+            "max": 1,
+            "group": "base",
+            "type": "page"
+        },
+        "blankPage": {
+            "name": "空白页",
+            "max": 5,
+            "group": "base",
+            "type": "page"
+        },
+        "rulePage": {
+            "name": "活动规则页",
+            "max": 1,
+            "group": "base",
+            "type": "page"
+        },
+        "isNewOne": {
+            "name": "是否新用户",
+            "max": -1,
+            "group": "flag",
+            "type": "flag",
+            "next": [
+                "fillInPhoneNumberPage"
+            ]
+        },
+        "isFollow": {
+            "name": "是否微信关注",
+            "max": -1,
+            "group": "flag",
+            "type": "flag",
+            "next": [
+                "followPage"
+            ]
+        },
+        "isDraw": {
+            "name": "码是否被抽奖",
+            "max": -1,
+            "group": "flag",
+            "type": "flag",
+            "next": [
+                "luckDraw",
+                "scanLuckDrawPage",
+                "scanSlotMachineDrawPage",
+                "scanRotaryDrawPage",
+                "scanSquareDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "isSelfScan": {
+            "name": "是否本人扫码",
+            "max": -1,
+            "group": "flag",
+            "type": "flag",
+            "next": [
+                "selfScanPage",
+                "otherScanPage"
+            ]
+        },
+        "isLocation": {
+            "name": "是否获取位置",
+            "max": 1,
+            "group": "flag",
+            "type": "flag"
+        },
+        "isWin": {
+            "name": "是否中奖",
+            "max": 1,
+            "group": "flag",
+            "type": "flag",
+            "next": [
+                "winPage",
+                "losePage"
+            ]
+        },
+        "isReceiveAward": {
+            "name": "是否领取成功",
+            "max": -1,
+            "group": "flag",
+            "type": "flag"
+        },
+        "optionRewardType": {
+            "name": "奖品类型",
+            "max": -1,
+            "group": "option",
+            "type": "option",
+            "childLabel": [
+                "积分",
+                "微信红包",
+                "实物",
+                "优惠券",
+                "零钱"
+            ],
+            "childCount": 5,
+            "next": [
+                "isReceiveAward",
+                "pointRecivePage",
+                "changeRecivePage",
+                "redPacketReciveSuccessPage",
+                "redPacketReciveFailurePage",
+                "fillInInformationPage",
+                "couponReciveSuccessPage",
+                "couponReciveFailurePage"
+            ]
+        },
+        "scanLuckDrawPage": {
+            "name": "扫码抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "luckDraw",
+                "scanSlotMachineDrawPage",
+                "scanRotaryDrawPage",
+                "scanSquareDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "scanRotaryDrawPage": {
+            "name": "转盘扫码抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "luckDraw",
+                "scanLuckDrawPage",
+                "scanSlotMachineDrawPage",
+                "scanSquareDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "scanSquareDrawPage": {
+            "name": "九宫格扫码抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "luckDraw",
+                "scanLuckDrawPage",
+                "scanSlotMachineDrawPage",
+                "scanRotaryDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "scanSlotMachineDrawPage": {
+            "name": "老虎机扫码抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "luckDraw",
+                "scanLuckDrawPage",
+                "scanRotaryDrawPage",
+                "scanSquareDrawPage",
+                "scanScratchDrawPage"
+            ]
+        },
+        "scanScratchDrawPage": {
+            "name": "刮刮卡扫码抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "luckDraw",
+                "scanLuckDrawPage",
+                "scanSlotMachineDrawPage",
+                "scanRotaryDrawPage",
+                "scanSquareDrawPage"
+            ]
+        },
+        "pointLuckDrawPage": {
+            "name": "积分抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "exclude": [
+                "pointSlotMachineDrawPage",
+                "pointRotaryDrawPage",
+                "pointSquareDrawPage",
+                "pointScratchDrawPage"
+            ]
+        },
+        "pointRotaryDrawPage": {
+            "name": "转盘积分抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "exclude": [
+                "pointLuckDrawPage",
+                "pointSlotMachineDrawPage",
+                "pointSquareDrawPage",
+                "pointScratchDrawPage"
+            ]
+        },
+        "pointSquareDrawPage": {
+            "name": "九宫格积分抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "exclude": [
+                "pointSlotMachineDrawPage",
+                "pointRotaryDrawPage",
+                "pointLuckDrawPage",
+                "pointScratchDrawPage"
+            ]
+        },
+        "pointSlotMachineDrawPage": {
+            "name": "老虎机积分抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "exclude": [
+                "pointLuckDrawPage",
+                "pointRotaryDrawPage",
+                "pointSquareDrawPage",
+                "pointScratchDrawPage"
+            ]
+        },
+        "pointScratchDrawPage": {
+            "name": "刮刮卡积分抽奖页",
+            "max": 1,
+            "group": "scan",
+            "type": "page",
+            "next": [
+                "isWin"
+            ],
+            "exclude": [
+                "pointSlotMachineDrawPage",
+                "pointRotaryDrawPage",
+                "pointSquareDrawPage",
+                "pointLuckDrawPage"
+            ]
+        },
+        "winPage": {
+            "name": "中奖结果页",
+            "max": 1,
+            "group": "common",
+            "type": "page",
+            "next": [
+                "optionRewardType"
+            ]
+        },
+        "losePage": {
+            "name": "不中奖页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "redPacketReciveSuccessPage": {
+            "name": "红包领取成功页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "redPacketReciveFailurePage": {
+            "name": "红包领取失败页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "couponReciveSuccessPage": {
+            "name": "优惠券领取成功页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "couponReciveFailurePage": {
+            "name": "优惠券领取失败页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "fillInInformationPage": {
+            "name": "实物填信息页",
+            "max": 1,
+            "group": "common",
+            "type": "page",
+            "next": [
+                "physicalRecivePage"
+            ]
+        },
+        "physicalRecivePage": {
+            "name": "实物领取页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "selfScanPage": {
+            "name": "本人已扫码页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "otherScanPage": {
+            "name": "非本人已扫码页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "fillInPhoneNumberPage": {
+            "name": "填手机号码页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "followPage": {
+            "name": "关注公众号页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "pointRecivePage": {
+            "name": "积分领取页",
+            "max": 1,
+            "group": "common",
+            "type": "page",
+            "next": [
+                "pointLuckDrawPage",
+                "pointRotaryDrawPage",
+                "pointSlotMachineDrawPage",
+                "pointScratchDrawPage",
+                "pointSquareDrawPage"
+            ]
+        },
+        "changeRecivePage": {
+            "name": "零钱领取页",
+            "max": 1,
+            "group": "common",
+            "type": "page",
+            "next": [
+                "changeTransferPage",
+                "changeWithdrawPage"
+            ]
+        },
+        "changeTransferPage": {
+            "name": "零钱转增页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        },
+        "changeWithdrawPage": {
+            "name": "零钱提现页",
+            "max": 1,
+            "group": "common",
+            "type": "page"
+        }
+    },
+    "groups": [
+        {
+            "id": "action",
+            "name": "行为",
+            "color": "#C9FF40"
+        },
+        {
+            "id": "base",
+            "name": "基础页面",
+            "color": "#00FF3A"
+        },
+        {
+            "id": "flag",
+            "name": "判断",
+            "color": "#666666"
+        },
+        {
+            "id": "option",
+            "name": "多条件",
+            "color": "#85007D"
+        },
+        {
+            "id": "scan",
+            "name": "抽奖页面",
+            "color": "#FF001D"
+        },
+        {
+            "id": "common",
+            "name": "常用页面",
+            "color": "#0000F9"
+        }
+    ]
+}

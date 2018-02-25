@@ -1,0 +1,52 @@
+.normal {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.flowChart {
+    /*display: inline-block;*/
+    width: 420px;
+    /*float: left;*/
+}
+
+.player {
+    width: 375px;
+    height: 667px;
+    /*border: 2px dashed rgb(218, 216, 216);*/
+    position: relative;
+}
+
+.middle {
+    /*display: inline-block;*/
+    width: 375px;
+    height: 667px;
+    position: relative;
+    z-index: 1;
+}
+
+.toolkit {
+    /*display: inline-block;*/
+    width: 440px;
+    height: 672px;
+    /*float: right;*/
+}
+
+.playerSlider {
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+.currentPageName {
+    position: absolute;
+    width: 100%;
+    top: -43px;
+    font-size: 29px;
+}

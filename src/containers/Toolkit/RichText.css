@@ -1,0 +1,27 @@
+/*@import '../../../node_modules/react-quill/dist/quill.snow.css';*/
+
+.richText {
+    /*position: absolute;*/
+    pointer-events: none
+}
+
+.richText>div:first-child {
+    position: absolute;
+    display: none;
+    top: -80px;
+    background: #fff
+}
+
+.richText>div:last-child {
+    border: none
+}
+
+.richText .ql-toolbar {
+    position: absolute;
+    top: -20px
+}
+
+.richEditor {
+    /*position: absolute;*/
+    border: none;
+}

@@ -1,0 +1,30 @@
+.normal {
+  }
+
+.title {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+
+}
+
+.text {
+  float: left;
+  margin-left: 12px;
+}
+
+.arrow {
+  float: right;
+  margin-right: 12px;
+  transition: transform .4s;
+
+}
+
+.options {
+  background: #f3f5f9;
+  width: 100%;
+  transition: transform .4s;
+}

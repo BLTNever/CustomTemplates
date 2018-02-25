@@ -1,0 +1,21 @@
+.jump {
+    width: 100%;
+}
+.jumpRow {
+  width: 100%;
+  /*height: auto;*/
+  /*border-bottom: 1px #a7b1b7 solid;*/
+  font-size: 13px;
+  display: block;
+  height: 36px;
+}
+
+.jumpText {
+  line-height: 36px;
+  text-align: center;
+}
+
+.jumpRadio {
+  width: 100%;
+  margin: 4px 0;
+}

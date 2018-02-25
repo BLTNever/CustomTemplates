@@ -1,0 +1,159 @@
+.selector {
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: none;
+  list-style: none!important;
+  margin: 0 !important;
+  padding: 0;
+  -webkit-transition: padding .5s;
+  transition: padding .5s;
+}
+
+.circle {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 1px solid #08a1ef;
+  border-radius: 12px;
+  position: absolute;
+  z-index: 3;
+}
+
+.rotateCircle {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  top: -28px;
+  left: 50%;
+  margin-left: -4px;
+  background-color: #44cb83;
+  border: none;
+  cursor: url("../../assets/mouserotate.ico") 10 10,default;
+}
+
+.rotateLine {
+  position: absolute;
+  width: 1px;
+  height: 18px;
+  top: -18px;
+  left: 50.3%;
+  background-color: #44cb83;
+}
+
+.barMidleLine {
+  position: absolute;
+  height: 100%;
+  border-left: 1px dashed #44cb83;
+  top: 0;
+  left: 50%;
+  display: none;
+}
+
+.line {
+  z-index: 2;
+  position: absolute;
+}
+
+.lineN {
+  composes: line;
+  width: 100%;
+  height: 5px;
+  top: -4px;
+  background: url("../../assets/blue1px.png") repeat-x bottom;
+  cursor: ns-resize;
+}
+
+.circleN {
+  composes: circle;
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  margin-left: -5px;
+}
+
+.lineE {
+  composes: line;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  right: -4px;
+  background: url("../../assets/blue1px.png") repeat-y 0;
+  cursor: ew-resize;
+}
+
+.circleE {
+  composes: circle;
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  margin-top: -5px;
+}
+
+.lineS {
+  composes: line;
+  width: 100%;
+  height: 5px;
+  bottom: -4px;
+  background: url("../../assets/blue1px.png") repeat-x top;
+  cursor: ns-resize;
+}
+
+.circleS {
+  composes: circle;
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  margin-left: -5px;
+}
+
+.lineW {
+  composes: line;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  left: -4px;
+  background: url("../../assets/blue1px.png") repeat-y 100%;
+  cursor: ew-resize;
+}
+
+.circleW {
+  composes: circle;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  margin-top: -5px;
+}
+
+.circleNw {
+  composes: circle;
+  top: -5px;
+  left: -5px;
+  cursor: nwse-resize;
+  z-index: 5;
+}
+
+.circleNe {
+  composes: circle;
+  top: -5px;
+  right: -6px;
+  cursor: nesw-resize;
+}
+
+.circleSe {
+  composes: circle;
+  bottom: -5px;
+  right: -6px;
+  cursor: nwse-resize;
+}
+
+.circleSw {
+  composes: circle;
+  bottom: -5px;
+  left: -5px;
+  cursor: nesw-resize;
+}

@@ -1,0 +1,11 @@
+.normal {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px #a7b1b7 solid;
+  font-size: 13px;
+}
+
+.tr td {
+  width: 16.666%;
+  height: 100%;
+}

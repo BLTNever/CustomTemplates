@@ -1,0 +1,19 @@
+.normal {
+  width: 100%;
+  /*height: 30px;*/
+  height: auto;
+  /*border-bottom: 1px #a7b1b7 solid;*/
+  font-size: 13px;
+
+}
+
+.text {
+  width: 33%;
+  height: 30px;
+  text-align: center;
+}
+
+.select {
+  width: 33%;
+  text-align: left;
+}

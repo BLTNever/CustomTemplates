@@ -1,0 +1,4146 @@
+{
+    "audio": {
+        "fileName": "",
+        "src": "",
+        "loop": true
+    },
+    "flag": {
+        "default": true,
+        "isRouter": true,
+        "registers": true,
+        "attention": true,
+        "scan": true,
+        "rewardType": [
+            0,
+            1,
+            2
+        ]
+    },
+    "page": {
+        "public": {
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "position": "absolute",
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "backgroundSize": "100% auto",
+                    "backgroundPosition": "top center",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundImage": ""
+                }
+            },
+            "elements": []
+        },
+        "container": {
+            "name": "主页面",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "position": "absolute",
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "backgroundSize": "100% auto",
+                    "backgroundPosition": "top center",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundImage": ""
+                }
+            },
+            "elements": []
+        },
+        "loadingPage": {
+            "name": "加载页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "width": "100%",
+                    "height": "100%",
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/loading-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "position": "absolute"
+                }
+            },
+            "elements": []
+        },
+        "scanLuckDrawPage": {
+            "name": "扫码抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/present.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 138,
+                        "height": 138,
+                        "position": "absolute",
+                        "left": 118.5,
+                        "top": 261,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/lottery-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 194.128,
+                        "height": 42,
+                        "position": "absolute",
+                        "left": 90.436,
+                        "top": 490,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "goLottery"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/rule-yellow.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 77,
+                        "height": 32,
+                        "position": "absolute",
+                        "left": 292,
+                        "top": 618,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "rule"
+                }
+            ]
+        },
+        "scanRotaryDrawPage": {
+            "name": "转盘扫码抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "scanSquareDrawPage": {
+            "name": "九宫格扫码抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "scanSlotMachineDrawPage": {
+            "name": "老虎机扫码抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "scanScratchDrawPage": {
+            "name": "刮刮卡扫码抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "pointLuckDrawPage": {
+            "name": "积分抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "pointRotaryDrawPage": {
+            "name": "转盘积分抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "pointSquareDrawPage": {
+            "name": "九宫格积分抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "pointSlotMachineDrawPage": {
+            "name": "老虎机积分抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "pointScratchDrawPage": {
+            "name": "刮刮卡积分抽奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/orange-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "selfScanPage": {
+            "name": "本人已扫码页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/brown-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/eclipse-yellow.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 77.5,
+                        "height": 37,
+                        "position": "absolute",
+                        "left": 91,
+                        "top": 270,
+                        "transform": "rotate(0deg)",
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(88,42,23,1)",
+                        "zIndex": 25
+                    },
+                    "value": "恭喜您于",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 48,
+                        "height": 37,
+                        "position": "absolute",
+                        "left": 238,
+                        "top": 270,
+                        "transform": "rotate(0deg)",
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(88,42,23,1)",
+                        "zIndex": 25
+                    },
+                    "value": "获得",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 91.2214,
+                        "height": 86,
+                        "position": "absolute",
+                        "left": 156,
+                        "top": 254,
+                        "transform": "rotate(0deg)",
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(88,42,23,1)",
+                        "zIndex": 25
+                    },
+                    "value": "xx/xx/xx xx:xx",
+                    "static": true,
+                    "visible": "default",
+                    "param": "scanTime"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 97.5,
+                        "height": 39,
+                        "position": "absolute",
+                        "left": 137,
+                        "top": 327,
+                        "transform": "rotate(0deg)",
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(159,22,22,1)",
+                        "zIndex": 25
+                    },
+                    "value": "xxx",
+                    "static": true,
+                    "visible": "default",
+                    "param": "prizeName"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/lotteryRecord-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 194.128,
+                        "height": 42,
+                        "position": "absolute",
+                        "left": 90.436,
+                        "top": 490,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "lotteryRecord"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/rule-brown-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 96.5079,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 275.11,
+                        "top": 22,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "rule"
+                }
+            ]
+        },
+        "otherScanPage": {
+            "name": "非本人已扫码页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/brown-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/eclipse-yellow.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/rule-brown-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 96.5079,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 275.11,
+                        "top": 22,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "rule"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 192.5,
+                        "height": 77,
+                        "position": "absolute",
+                        "left": 89.5,
+                        "top": 286,
+                        "transform": "rotate(0deg)",
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(83,39,13,1)",
+                        "zIndex": 25
+                    },
+                    "value": "该二维码已经被扫过啦!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "winPage": {
+            "name": "中奖结果页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/lottery-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-blue.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 277,
+                        "height": 277,
+                        "position": "absolute",
+                        "left": 50,
+                        "top": 187,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 33,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 222,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "18",
+                        "fontWeight": "bold"
+                    },
+                    "value": "恭喜您获得",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 184,
+                        "height": 37,
+                        "position": "absolute",
+                        "left": 97,
+                        "top": 254,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "22",
+                        "fontWeight": "bold"
+                    },
+                    "value": "一台iPhone6S",
+                    "static": true,
+                    "visible": "default",
+                    "param": "name"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/prize-default.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 128,
+                        "height": 137,
+                        "position": "absolute",
+                        "left": 123,
+                        "top": 293,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "img"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/receive-now.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 186,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 94.5,
+                        "top": 496,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "receiveNow"
+                }
+            ]
+        },
+        "losePage": {
+            "name": "不中奖页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/lottery-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-blue.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 277,
+                        "height": 277,
+                        "position": "absolute",
+                        "left": 50,
+                        "top": 187,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 102,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 133,
+                        "top": 262,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16"
+                    },
+                    "value": "很遗憾!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 153,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 300,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "24",
+                        "fontWeight": "bold"
+                    },
+                    "value": "您没有中奖!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "rulePage": {
+            "name": "活动规则页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/rule-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 176,
+                        "height": 64,
+                        "position": "absolute",
+                        "left": 100,
+                        "top": 66,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 110,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 132,
+                        "top": 135,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "20"
+                    },
+                    "value": "活动规则",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 232,
+                        "height": 412,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 183,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "wordWrap": "break-word"
+                    },
+                    "value": "内容内容内容",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "fillInPhoneNumberPage": {
+            "name": "填手机号码页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/registers-bg.jpg)",
+                    "width": "100%",
+                    "height": "100%",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 150,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 67,
+                        "top": 225,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "transform": "rotate(0deg)"
+                    },
+                    "value": "*手机号",
+                    "static": true,
+                    "visible": "default"
+                },
+                {
+                    "tag": "input",
+                    "attr": {
+                        "type": "text"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 248,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 63,
+                        "top": 268,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "phone"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/confirm-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 146,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 114,
+                        "top": 445,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "confirmBtn"
+                }
+            ]
+        },
+        "followPage": {
+            "name": "关注公众号页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/square.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 251,
+                        "height": 251,
+                        "position": "absolute",
+                        "left": 62,
+                        "top": 141,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/code.jpg"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 109,
+                        "height": 109,
+                        "position": "absolute",
+                        "left": 133,
+                        "top": 275,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 233,
+                        "height": 64,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 212,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "18",
+                        "fontWeight": "bold"
+                    },
+                    "value": "长按关注下方二维码领取您的奖品/红包",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "pointRecivePage": {
+            "name": "积分领取页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/square.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 251,
+                        "height": 251,
+                        "position": "absolute",
+                        "left": 62,
+                        "top": 141,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/pointRecord.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 226.5,
+                        "height": 43,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 294,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "pointRecord"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 233,
+                        "height": 64,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 212,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "18",
+                        "fontWeight": "bold"
+                    },
+                    "value": "您的积分领取成功!您可到积分记录中查询",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "changeRecivePage": {
+            "name": "零钱领取页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "changeTransferPage": {
+            "name": "零钱转增页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "changeWithdrawPage": {
+            "name": "零钱提现页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "redPacketReciveSuccessPage": {
+            "name": "红包领取成功页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/square.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 251,
+                        "height": 251,
+                        "position": "absolute",
+                        "left": 62,
+                        "top": 141,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/record-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 226.5,
+                        "height": 43,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 294,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "lotteryRecord"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 233,
+                        "height": 64,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 212,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "18",
+                        "fontWeight": "bold"
+                    },
+                    "value": "您的红包已经发送成功!您可以到您的中奖记录中查看!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "redPacketReciveFailurePage": {
+            "name": "红包领取失败页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/square.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 251,
+                        "height": 251,
+                        "position": "absolute",
+                        "left": 62,
+                        "top": 141,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/record-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 226.5,
+                        "height": 43,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 294,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "lotteryRecord"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 237,
+                        "height": 89,
+                        "position": "absolute",
+                        "left": 68,
+                        "top": 183,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "18",
+                        "fontWeight": "bold"
+                    },
+                    "value": "红包领取失败,别担心!您可以通过点击下方\"中奖纪录\"按钮领取您的红包!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "couponReciveSuccessPage": {
+            "name": "优惠券领取成功页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "couponReciveFailurePage": {
+            "name": "优惠券领取失败页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": []
+        },
+        "fillInInformationPage": {
+            "name": "实物填信息页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/info-con.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 307,
+                        "height": 562,
+                        "position": "absolute",
+                        "left": 34,
+                        "top": 63,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 142.5,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 119,
+                        "top": 64,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 235,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 129,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "12"
+                    },
+                    "value": "注:如因提交信息有误造成领奖失败,本公司不承担责任!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 150,
+                        "height": 23,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 186,
+                        "transform": "rotate(0deg)"
+                    },
+                    "value": "*真实姓名",
+                    "static": true,
+                    "visible": "default"
+                },
+                {
+                    "tag": "input",
+                    "attr": {
+                        "type": "text"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 234.5,
+                        "height": 30,
+                        "position": "absolute",
+                        "left": 73,
+                        "top": 221,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "consignee"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 150,
+                        "height": 23,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 278,
+                        "transform": "rotate(0deg)"
+                    },
+                    "value": "*联系电话",
+                    "static": true,
+                    "visible": "default"
+                },
+                {
+                    "tag": "input",
+                    "attr": {
+                        "type": "text"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 234.5,
+                        "height": 30,
+                        "position": "absolute",
+                        "left": 76,
+                        "top": 320,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "phone"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 150,
+                        "height": 23,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 372,
+                        "transform": "rotate(0deg)"
+                    },
+                    "value": "*递送地址",
+                    "static": true,
+                    "visible": "default"
+                },
+                {
+                    "tag": "select",
+                    "attr": {
+                        "placeholder": "省"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 75,
+                        "height": 30,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 421,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "province"
+                },
+                {
+                    "tag": "select",
+                    "attr": {
+                        "placeholder": "市"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 75,
+                        "height": 30,
+                        "position": "absolute",
+                        "left": 155,
+                        "top": 421,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "city"
+                },
+                {
+                    "tag": "select",
+                    "attr": {
+                        "placeholder": "区"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 75,
+                        "height": 30,
+                        "position": "absolute",
+                        "left": 246,
+                        "top": 421,
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "area"
+                },
+                {
+                    "tag": "input",
+                    "attr": {
+                        "type": "text",
+                        "placeholder": "详细地址"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 249,
+                        "height": 86,
+                        "position": "absolute",
+                        "left": 76,
+                        "top": 478,
+                        "overflow": "auto",
+                        "background": "rgba(255,255,255,1)",
+                        "transform": "rotate(0deg)",
+                        "borderRadius": "9px",
+                        "borderColor": "none"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "param": "address"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/submit-green-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 140,
+                        "height": 39,
+                        "position": "absolute",
+                        "left": 117.5,
+                        "top": 585,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "submitReceiveInfo"
+                }
+            ]
+        },
+        "physicalRecivePage": {
+            "name": "实物领取页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/green-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/square.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 251,
+                        "height": 251,
+                        "position": "absolute",
+                        "left": 62,
+                        "top": 141,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 102,
+                        "height": 34,
+                        "position": "absolute",
+                        "left": 136.5,
+                        "top": 180,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold"
+                    },
+                    "value": "信息提交成功!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 195,
+                        "height": 50,
+                        "position": "absolute",
+                        "left": 90,
+                        "top": 216,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold"
+                    },
+                    "value": "奖品会在10个工作日内寄出请您耐心等待!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 227,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 309,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16"
+                    },
+                    "value": "注:如因提交信息有误造成领奖失败,本公司不承担责任!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/record-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 226.5,
+                        "height": 43,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 430,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "lotteryRecord"
+                }
+            ]
+        },
+        "lotteryRecord": {
+            "name": "中奖记录页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/record-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 33,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 60,
+                        "color": "rgba(255, 255, 255, 1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": 20
+                    },
+                    "value": "中间记录",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 33,
+                        "position": "absolute",
+                        "left": 111.5,
+                        "top": 95,
+                        "color": "rgba(255, 255, 255, 1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": 15
+                    },
+                    "value": "查看积分记录",
+                    "static": true,
+                    "visible": "default",
+                    "action": "pointRecord"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/lottery-record.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 314.8,
+                        "height": 478,
+                        "position": "absolute",
+                        "left": 30.1,
+                        "top": 172,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default",
+                    "specimen": "lotteryRecord",
+                    "param": "specimen"
+                }
+            ]
+        },
+        "pointRecord": {
+            "name": "积分记录页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/point-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 29,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 59,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 19
+                    },
+                    "value": "积分记录",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 99,
+                        "height": 23,
+                        "position": "absolute",
+                        "left": 271,
+                        "top": 63,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 14
+                    },
+                    "value": "查看中奖记录",
+                    "static": true,
+                    "visible": "default",
+                    "action": "lotteryRecord"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 75,
+                        "height": 23,
+                        "position": "absolute",
+                        "left": 150,
+                        "top": 96,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 13
+                    },
+                    "value": "总积分",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 91,
+                        "height": 62,
+                        "position": "absolute",
+                        "left": 142,
+                        "top": 111,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 42
+                    },
+                    "value": "160(例)",
+                    "static": true,
+                    "visible": "default",
+                    "param": "total"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 76,
+                        "height": 22,
+                        "position": "absolute",
+                        "left": 8,
+                        "top": 182,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 14
+                    },
+                    "value": "收到积分:",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 41,
+                        "height": 20,
+                        "position": "absolute",
+                        "left": 82,
+                        "top": 182,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 14
+                    },
+                    "value": "320(例)",
+                    "static": true,
+                    "visible": "default",
+                    "param": "income"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 76,
+                        "height": 22,
+                        "position": "absolute",
+                        "left": 244,
+                        "top": 182,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 14
+                    },
+                    "value": "支出积分:",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 33,
+                        "height": 21,
+                        "position": "absolute",
+                        "left": 324,
+                        "top": 182,
+                        "transform": "rotate(0deg)",
+                        "color": "rgba(255,255,255,1)",
+                        "fontSize": 14
+                    },
+                    "value": "160(例)",
+                    "static": true,
+                    "visible": "default",
+                    "param": "payOut"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/point-record.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 314.4,
+                        "height": 376,
+                        "position": "absolute",
+                        "left": 30.3,
+                        "top": 239,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default",
+                    "specimen": "pointRecord",
+                    "param": "specimen"
+                }
+            ]
+        },
+        "attendOver": {
+            "name": "超过参与次数页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 176,
+                        "height": 78,
+                        "position": "absolute",
+                        "left": 99.5,
+                        "top": 255,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "22"
+                    },
+                    "value": "您今天的抽奖次数用完啦!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 192,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 91.5,
+                        "top": 343,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16"
+                    },
+                    "value": "请保留您的二维码,明天再来吧!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "awardOver": {
+            "name": "超过领奖次数页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 264,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "21",
+                        "fontWeight": "bold"
+                    },
+                    "value": "今天的领奖次数用完啦!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 338,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "zIndex": 20
+                    },
+                    "value": "明天继续来领吧!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "activityNoStart": {
+            "name": "活动未开始页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 292,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "24"
+                    },
+                    "value": "活动尚未开始敬请期待!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "activityPause": {
+            "name": "活动暂停页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 152,
+                        "height": 58,
+                        "position": "absolute",
+                        "left": 111.5,
+                        "top": 285,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "28"
+                    },
+                    "value": "前方拥堵!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 192,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 91.5,
+                        "top": 343,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16"
+                    },
+                    "value": "请2小时候再试试吧!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "activityEnd": {
+            "name": "活动结束页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 150,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 112.5,
+                        "top": 292,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "24",
+                        "fontWeight": "bold"
+                    },
+                    "value": "活动已结束!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "activityOverdue": {
+            "name": "活动过期页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/circular-white.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 260,
+                        "height": 260,
+                        "position": "absolute",
+                        "left": 58,
+                        "top": 203,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 228,
+                        "height": 96,
+                        "position": "absolute",
+                        "left": 74,
+                        "top": 74,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 165,
+                        "height": 78,
+                        "position": "absolute",
+                        "left": 99.5,
+                        "top": 255,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "28",
+                        "fontWeight": "bold"
+                    },
+                    "value": "活动虽到期奖品仍可兑!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 192,
+                        "height": 60,
+                        "position": "absolute",
+                        "left": 91.5,
+                        "top": 343,
+                        "color": "rgba(255,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16"
+                    },
+                    "value": "您通过点击\"我的奖品\"按钮进入页面兑奖",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/my-prize.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 186,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 94.5,
+                        "top": 496,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": true,
+                    "visible": "default",
+                    "action": "myPrize"
+                }
+            ]
+        },
+        "changeReceived": {
+            "name": "零钱赠送被领",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-con2.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 375,
+                        "height": 509,
+                        "position": "absolute",
+                        "left": 0,
+                        "top": 79,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "1"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-red.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 115,
+                        "height": 236,
+                        "position": "absolute",
+                        "left": 195,
+                        "top": 58,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 187,
+                        "height": 57,
+                        "position": "absolute",
+                        "left": 94,
+                        "top": 195,
+                        "color": "rgba(251,68,132,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "领红包都不积极来晚了,红包被领走了吧!",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "changeNotReceived": {
+            "name": "零钱赠送未领",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-con1.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 375,
+                        "height": 509,
+                        "position": "absolute",
+                        "left": 0,
+                        "top": 79,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "1"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 187,
+                        "height": 31,
+                        "position": "absolute",
+                        "left": 94,
+                        "top": 142,
+                        "color": "rgba(251,68,132,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "您发出的红包无人问津!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 235,
+                        "height": 55,
+                        "position": "absolute",
+                        "left": 70,
+                        "top": 177,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "",
+                        "zIndex": "9"
+                    },
+                    "value": "这不科学嘛,你确定自己没有发错朋友圈?",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "changeHasBrought": {
+            "name": "零钱赠送已领",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-con3.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 375,
+                        "height": 509,
+                        "position": "absolute",
+                        "left": 0,
+                        "top": 79,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "1"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-start.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 77,
+                        "height": 77,
+                        "position": "absolute",
+                        "left": 280,
+                        "top": 51,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/change-start.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 52,
+                        "height": 52,
+                        "position": "absolute",
+                        "left": 52,
+                        "top": 169,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 88,
+                        "height": 33,
+                        "position": "absolute",
+                        "left": 112,
+                        "top": 128,
+                        "color": "rgba(251,68,132,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "好友",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 88,
+                        "height": 33,
+                        "position": "absolute",
+                        "left": 158,
+                        "top": 128,
+                        "color": "rgba(251,68,132,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "XX",
+                    "static": false,
+                    "visible": "default",
+                    "param": "presenter"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 187,
+                        "height": 57,
+                        "position": "absolute",
+                        "left": 94,
+                        "top": 162,
+                        "color": "rgba(251,68,132,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "默默扔给你一个红包!",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 114,
+                        "height": 35,
+                        "position": "absolute",
+                        "left": 128,
+                        "top": 197,
+                        "color": "rgba(245,166,35,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "fontWeight": "bold",
+                        "zIndex": "9"
+                    },
+                    "value": "2.5元",
+                    "static": false,
+                    "visible": "default",
+                    "param": "presenterNum"
+                }
+            ]
+        },
+        "insideRule": {
+            "name": "活动规则页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/rule-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 176,
+                        "height": 64,
+                        "position": "absolute",
+                        "left": 100,
+                        "top": 66,
+                        "transform": "rotate(0deg)"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 110,
+                        "height": 40,
+                        "position": "absolute",
+                        "left": 132,
+                        "top": 135,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "20"
+                    },
+                    "value": "活动规则",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 232,
+                        "height": 412,
+                        "position": "absolute",
+                        "left": 71,
+                        "top": 183,
+                        "overflow": "auto",
+                        "wordBreak": "all",
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "16",
+                        "wordWrap": "break-word"
+                    },
+                    "value": "内容内容内容",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "antiFake": {
+            "name": "防伪页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-bg.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 306,
+                        "height": 527,
+                        "position": "absolute",
+                        "left": 34,
+                        "top": 70,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "1"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 301,
+                        "height": 189,
+                        "position": "absolute",
+                        "left": 32,
+                        "top": 0,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-wares.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 252,
+                        "height": 166,
+                        "position": "absolute",
+                        "left": 61,
+                        "top": 229,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 160,
+                        "height": 63,
+                        "position": "absolute",
+                        "left": 108,
+                        "top": 568,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "productSecurityPage": {
+            "name": "防伪页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-bg.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 306,
+                        "height": 527,
+                        "position": "absolute",
+                        "left": 34,
+                        "top": 70,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "1"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-title.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 301,
+                        "height": 189,
+                        "position": "absolute",
+                        "left": 32,
+                        "top": 0,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-wares.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 252,
+                        "height": 166,
+                        "position": "absolute",
+                        "left": 61,
+                        "top": 229,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "img",
+                    "attr": {
+                        "src": "http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/antiFake-btn.png"
+                    },
+                    "style": {
+                        "textAlign": "left",
+                        "width": 160,
+                        "height": 63,
+                        "position": "absolute",
+                        "left": 108,
+                        "top": 568,
+                        "transform": "rotate(0deg)",
+                        "zIndex": "9"
+                    },
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 4,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 99,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "于",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 90,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 115,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "2017.11.11",
+                    "static": false,
+                    "visible": "default",
+                    "param": "fakeTime"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 24,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 210,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "第",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 24,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 225,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "3",
+                    "static": false,
+                    "visible": "default",
+                    "param": "fakeNum"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 58,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 240,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "次被扫",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "center",
+                        "width": 58,
+                        "height": 36,
+                        "position": "absolute",
+                        "left": 240,
+                        "top": 195,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "次被扫",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 91,
+                        "height": 25,
+                        "position": "absolute",
+                        "left": 54,
+                        "top": 393,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontWeight": "bold",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "产品名称:",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 188,
+                        "height": 25,
+                        "position": "absolute",
+                        "left": 124,
+                        "top": 393,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "MARVIS 玛尔斯 蓝色海洋薄荷牙膏",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 91,
+                        "height": 25,
+                        "position": "absolute",
+                        "left": 54,
+                        "top": 430,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontWeight": "bold",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "产品信息:",
+                    "static": false,
+                    "visible": "default"
+                },
+                {
+                    "tag": "div",
+                    "attr": {},
+                    "style": {
+                        "textAlign": "left",
+                        "width": 188,
+                        "height": 80,
+                        "position": "absolute",
+                        "left": 124,
+                        "top": 430,
+                        "color": "rgba(0,0,0,1)",
+                        "transform": "rotate(0deg)",
+                        "fontSize": "14",
+                        "zIndex": 9
+                    },
+                    "value": "MARVIS 玛尔斯 蓝色海洋薄荷牙膏玛尔斯 蓝色海洋薄荷牙膏玛尔斯 蓝色海洋薄荷牙膏玛尔斯 ",
+                    "static": false,
+                    "visible": "default"
+                }
+            ]
+        },
+        "origin": {
+            "name": "溯源页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "溯源页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "productTraceabilityPage": {
+            "name": "溯源页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "溯源页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "changeRecord": {
+            "name": "零钱记录",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "零钱记录页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "blankPage": {
+            "name": "空白页",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页1页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "insideOther0": {
+            "name": "空白页1",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页1页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "insideOther1": {
+            "name": "空白页2",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页2页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "insideOther2": {
+            "name": "空白页3",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页3页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "insideOther3": {
+            "name": "空白页4",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页4页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        },
+        "insideOther4": {
+            "name": "空白页5",
+            "pageElement": {
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "backgroundImage": "url(http://ty-static-test.oss-cn-hangzhou.aliyuncs.com/m/1/images/error-bg.png)",
+                    "backgroundPosition": "center",
+                    "backgroundSize": "100% 100%",
+                    "backgroundRepeat": "no-repeat",
+                    "width": "100%",
+                    "height": "100%"
+                }
+            },
+            "elements": [{
+                "tag": "div",
+                "attr": {},
+                "style": {
+                    "textAlign": "center",
+                    "width": 165,
+                    "height": 78,
+                    "position": "absolute",
+                    "left": 99.5,
+                    "top": 255,
+                    "color": "rgba(255,0,0,1)",
+                    "transform": "rotate(0deg)",
+                    "fontSize": "28",
+                    "fontWeight": "bold"
+                },
+                "value": "空白页5页面!",
+                "static": false,
+                "visible": "default"
+            }]
+        }
+    },
+    "insidePage": [{
+            "name": "活动规则",
+            "router": "insideRule"
+        },
+        {
+            "name": "防伪页",
+            "router": "antiFake"
+        },
+        {
+            "name": "溯源页",
+            "router": "origin"
+        },
+        {
+            "name": "中奖纪录",
+            "router": "lotteryRecord"
+        },
+        {
+            "name": "积分记录",
+            "router": "pointRecord"
+        },
+        {
+            "name": "零钱记录",
+            "router": "changeRecord"
+        },
+        {
+            "name": "空白页1",
+            "router": "insideOther0"
+        },
+        {
+            "name": "空白页2",
+            "router": "insideOther1"
+        },
+        {
+            "name": "空白页3",
+            "router": "insideOther2"
+        },
+        {
+            "name": "空白页4",
+            "router": "insideOther3"
+        },
+        {
+            "name": "空白页5",
+            "router": "insideOther4"
+        }
+    ],
+    "systemPage": [{
+            "name": "活动未开始",
+            "router": "activityNoStart"
+        },
+        {
+            "name": "活动已结束",
+            "router": "activityEnd"
+        },
+        {
+            "name": "活动暂停",
+            "router": "activityPause"
+        },
+        {
+            "name": "超过参与",
+            "router": "attendOver"
+        },
+        {
+            "name": "超过领取",
+            "router": "awardOver"
+        },
+        {
+            "name": "零钱赠送被领",
+            "router": "changeReceived"
+        },
+        {
+            "name": "零钱赠送未领",
+            "router": "changeNotReceived"
+        },
+        {
+            "name": "零钱赠送已领",
+            "router": "changeHasBrought"
+        }
+    ],
+    "saveData": {
+        "source": {
+            "nodes": [{
+                    "x": 240,
+                    "y": 80,
+                    "id": "node_0",
+                    "shape": "rect",
+                    "key": "wechat",
+                    "label": "微信扫码",
+                    "type": "action"
+                },
+                {
+                    "shape": "rect",
+                    "label": "加载页",
+                    "fatherId": "node_0",
+                    "x": 240,
+                    "y": 160,
+                    "type": "page",
+                    "id": "node_1",
+                    "key": "loadingPage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "溯源页",
+                    "fatherId": "node_1",
+                    "x": 240,
+                    "y": 240,
+                    "type": "page",
+                    "id": "node_2",
+                    "key": "productTraceabilityPage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "显示授权",
+                    "fatherId": "node_2",
+                    "x": 240,
+                    "y": 320,
+                    "type": "action",
+                    "id": "node_3",
+                    "key": "displayAuthorization"
+                },
+                {
+                    "shape": "rhombus",
+                    "label": "码是否被抽奖",
+                    "fatherId": "node_3",
+                    "x": 240,
+                    "y": 400,
+                    "type": "flag",
+                    "id": "node_4",
+                    "key": "isDraw"
+                },
+                {
+                    "shape": "rect",
+                    "position": 1,
+                    "label": "转盘扫码抽奖页",
+                    "fatherId": "node_4",
+                    "x": 340,
+                    "y": 520,
+                    "type": "page",
+                    "id": "node_6",
+                    "key": "scanRotaryDrawPage"
+                },
+                {
+                    "shape": "rect",
+                    "position": 0,
+                    "label": "活动规则页",
+                    "fatherId": "node_4",
+                    "x": 130,
+                    "y": 520,
+                    "type": "page",
+                    "id": "node_5",
+                    "key": "rulePage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_5",
+                    "x": 130,
+                    "y": 600,
+                    "type": "action",
+                    "id": "node_7",
+                    "key": "end"
+                },
+                {
+                    "shape": "rhombus",
+                    "label": "是否中奖",
+                    "fatherId": "node_6",
+                    "x": 340,
+                    "y": 600,
+                    "type": "flag",
+                    "id": "node_8",
+                    "key": "isWin"
+                },
+                {
+                    "shape": "rect",
+                    "position": 1,
+                    "label": "不中奖页",
+                    "fatherId": "node_8",
+                    "x": 400,
+                    "y": 720,
+                    "type": "page",
+                    "id": "node_10",
+                    "key": "losePage"
+                },
+                {
+                    "shape": "rect",
+                    "position": 0,
+                    "label": "中奖结果页",
+                    "fatherId": "node_8",
+                    "x": 130,
+                    "y": 750,
+                    "type": "page",
+                    "id": "node_9",
+                    "key": "winPage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_10",
+                    "x": 400,
+                    "y": 800,
+                    "type": "action",
+                    "id": "node_11",
+                    "key": "end"
+                },
+                {
+                    "shape": "circle",
+                    "label": "奖品类型",
+                    "fatherId": "node_9",
+                    "x": 130,
+                    "y": 830,
+                    "type": "option",
+                    "id": "node_12",
+                    "key": "optionRewardType"
+                },
+                {
+                    "shape": "rect",
+                    "position": 3,
+                    "label": "结束",
+                    "fatherId": "node_12",
+                    "x": 80,
+                    "y": 950,
+                    "type": "action",
+                    "id": "node_16",
+                    "key": "end"
+                },
+                {
+                    "shape": "rect",
+                    "position": 4,
+                    "label": "结束",
+                    "fatherId": "node_12",
+                    "x": -20,
+                    "y": 910,
+                    "type": "action",
+                    "id": "node_17",
+                    "key": "end"
+                },
+                {
+                    "shape": "rect",
+                    "position": 2,
+                    "label": "结束",
+                    "fatherId": "node_12",
+                    "x": 180,
+                    "y": 960,
+                    "type": "action",
+                    "id": "node_15",
+                    "key": "end"
+                },
+                {
+                    "shape": "rect",
+                    "position": 0,
+                    "label": "积分领取页",
+                    "fatherId": "node_12",
+                    "x": 430,
+                    "y": 890,
+                    "type": "page",
+                    "id": "node_13",
+                    "key": "pointRecivePage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_13",
+                    "x": 430,
+                    "y": 970,
+                    "type": "action",
+                    "id": "node_18",
+                    "key": "end"
+                },
+                {
+                    "shape": "rhombus",
+                    "position": 1,
+                    "label": "是否领取成功",
+                    "fatherId": "node_12",
+                    "x": 260,
+                    "y": 1040,
+                    "type": "flag",
+                    "id": "node_14",
+                    "key": "isReceiveAward"
+                },
+                {
+                    "shape": "rhombus",
+                    "position": 0,
+                    "label": "是否微信关注",
+                    "fatherId": "node_14",
+                    "x": 70,
+                    "y": 1140,
+                    "type": "flag",
+                    "id": "node_19",
+                    "key": "isFollow"
+                },
+                {
+                    "shape": "rect",
+                    "position": 1,
+                    "label": "红包领取失败页",
+                    "fatherId": "node_14",
+                    "x": 370,
+                    "y": 1140,
+                    "type": "page",
+                    "id": "node_20",
+                    "key": "redPacketReciveFailurePage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_20",
+                    "x": 370,
+                    "y": 1220,
+                    "type": "action",
+                    "id": "node_21",
+                    "key": "end"
+                },
+                {
+                    "shape": "rhombus",
+                    "position": 0,
+                    "label": "是否新用户",
+                    "fatherId": "node_19",
+                    "x": -160,
+                    "y": 1210,
+                    "type": "flag",
+                    "id": "node_22",
+                    "key": "isNewOne"
+                },
+                {
+                    "shape": "rect",
+                    "position": 1,
+                    "label": "关注公众号页",
+                    "fatherId": "node_19",
+                    "x": 170,
+                    "y": 1200,
+                    "type": "page",
+                    "id": "node_23",
+                    "key": "followPage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_23",
+                    "x": 170,
+                    "y": 1280,
+                    "type": "action",
+                    "id": "node_24",
+                    "key": "end"
+                },
+                {
+                    "shape": "rect",
+                    "position": 0,
+                    "label": "填手机号码页",
+                    "fatherId": "node_22",
+                    "x": -230,
+                    "y": 1320,
+                    "type": "page",
+                    "id": "node_25",
+                    "key": "fillInPhoneNumberPage"
+                },
+                {
+                    "shape": "rect",
+                    "position": 1,
+                    "label": "红包领取成功页",
+                    "fatherId": "node_22",
+                    "x": -100,
+                    "y": 1330,
+                    "type": "page",
+                    "id": "node_26",
+                    "key": "redPacketReciveSuccessPage"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_26",
+                    "x": -100,
+                    "y": 1410,
+                    "type": "action",
+                    "id": "node_27",
+                    "key": "end"
+                },
+                {
+                    "shape": "rect",
+                    "label": "结束",
+                    "fatherId": "node_25",
+                    "x": -230,
+                    "y": 1400,
+                    "type": "action",
+                    "id": "node_28",
+                    "key": "end"
+                }
+            ],
+            "edges": [{
+                    "shape": "smoothArrow",
+                    "source": "node_0",
+                    "target": "node_1",
+                    "id": "edge_1",
+                    "targetAnchor": 0,
+                    "fatherId": "node_0"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_1",
+                    "target": "node_2",
+                    "id": "edge_2",
+                    "targetAnchor": 0,
+                    "fatherId": "node_1"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_2",
+                    "target": "node_3",
+                    "id": "edge_3",
+                    "targetAnchor": 0,
+                    "fatherId": "node_2"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_3",
+                    "target": "node_4",
+                    "id": "edge_4",
+                    "targetAnchor": 0,
+                    "fatherId": "node_3"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_4",
+                    "target": "node_5",
+                    "id": "edge_5",
+                    "sourceAnchor": 3,
+                    "targetAnchor": 0,
+                    "label": "yes",
+                    "fatherId": "node_4"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_4",
+                    "target": "node_6",
+                    "id": "edge_6",
+                    "sourceAnchor": 1,
+                    "targetAnchor": 0,
+                    "label": "no",
+                    "fatherId": "node_4"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_5",
+                    "target": "node_7",
+                    "id": "edge_7",
+                    "targetAnchor": 0,
+                    "fatherId": "node_5"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_6",
+                    "target": "node_8",
+                    "id": "edge_8",
+                    "targetAnchor": 0,
+                    "fatherId": "node_6"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_8",
+                    "target": "node_9",
+                    "id": "edge_9",
+                    "sourceAnchor": 3,
+                    "targetAnchor": 0,
+                    "label": "yes",
+                    "fatherId": "node_8"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_8",
+                    "target": "node_10",
+                    "id": "edge_10",
+                    "sourceAnchor": 1,
+                    "targetAnchor": 0,
+                    "label": "no",
+                    "fatherId": "node_8"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_10",
+                    "target": "node_11",
+                    "id": "edge_11",
+                    "targetAnchor": 0,
+                    "fatherId": "node_10"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_9",
+                    "target": "node_12",
+                    "id": "edge_12",
+                    "targetAnchor": 0.5,
+                    "fatherId": "node_9"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_12",
+                    "target": "node_13",
+                    "id": "edge_13",
+                    "targetAnchor": 0,
+                    "label": "积分",
+                    "fatherId": "node_12"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_12",
+                    "target": "node_14",
+                    "id": "edge_14",
+                    "targetAnchor": 0,
+                    "label": "微信红包",
+                    "fatherId": "node_12"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_12",
+                    "target": "node_15",
+                    "id": "edge_15",
+                    "targetAnchor": 0,
+                    "label": "实物",
+                    "fatherId": "node_12"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_12",
+                    "target": "node_16",
+                    "id": "edge_16",
+                    "targetAnchor": 0,
+                    "label": "优惠券",
+                    "fatherId": "node_12"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_12",
+                    "target": "node_17",
+                    "id": "edge_17",
+                    "targetAnchor": 0,
+                    "label": "零钱",
+                    "fatherId": "node_12"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_13",
+                    "target": "node_18",
+                    "id": "edge_18",
+                    "targetAnchor": 0,
+                    "fatherId": "node_13"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_14",
+                    "target": "node_19",
+                    "id": "edge_19",
+                    "sourceAnchor": 3,
+                    "targetAnchor": 0,
+                    "label": "yes",
+                    "fatherId": "node_14"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_14",
+                    "target": "node_20",
+                    "id": "edge_20",
+                    "sourceAnchor": 1,
+                    "targetAnchor": 0,
+                    "label": "no",
+                    "fatherId": "node_14"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_20",
+                    "target": "node_21",
+                    "id": "edge_21",
+                    "targetAnchor": 0,
+                    "fatherId": "node_20"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_19",
+                    "target": "node_22",
+                    "id": "edge_22",
+                    "sourceAnchor": 3,
+                    "targetAnchor": 0,
+                    "label": "yes",
+                    "fatherId": "node_19"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_19",
+                    "target": "node_23",
+                    "id": "edge_23",
+                    "sourceAnchor": 1,
+                    "targetAnchor": 0,
+                    "label": "no",
+                    "fatherId": "node_19"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_23",
+                    "target": "node_24",
+                    "id": "edge_24",
+                    "targetAnchor": 0,
+                    "fatherId": "node_23"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_22",
+                    "target": "node_25",
+                    "id": "edge_25",
+                    "sourceAnchor": 3,
+                    "targetAnchor": 0,
+                    "label": "yes",
+                    "fatherId": "node_22"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_22",
+                    "target": "node_26",
+                    "id": "edge_26",
+                    "sourceAnchor": 1,
+                    "targetAnchor": 0,
+                    "label": "no",
+                    "fatherId": "node_22"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_26",
+                    "target": "node_27",
+                    "id": "edge_27",
+                    "targetAnchor": 0,
+                    "fatherId": "node_26"
+                },
+                {
+                    "shape": "smoothArrow",
+                    "source": "node_25",
+                    "target": "node_28",
+                    "id": "edge_28",
+                    "targetAnchor": 0,
+                    "fatherId": "node_25"
+                }
+            ]
+        },
+        "guides": []
+    }
+}
