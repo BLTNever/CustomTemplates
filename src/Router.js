@@ -5,7 +5,7 @@ import {
     Design,
     NotFound,
     Flow,
-} from '../index.js';
+} from './containers/index.js';
 
 export default class RouterApp extends Component {
     render() {

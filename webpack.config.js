@@ -1,12 +1,12 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var precss = require('precss');
-var autoprefixer = require('autoprefixer');
-var path = require('path');
-var packageOpts = require('./package.json');
-var dependencies = packageOpts.dependencies;
-var Libs = Object.keys(dependencies)
+let webpack = require('webpack');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let precss = require('precss');
+let autoprefixer = require('autoprefixer');
+let path = require('path');
+let packageOpts = require('./package.json');
+let dependencies = packageOpts.dependencies;
+let Libs = Object.keys(dependencies)
 Libs.splice(0, 1);
 // console.info(`- 部署环境: ${ENV}`)
 // console.info(`- 静态文件路径: ${CDN_PATH}`)
@@ -20,7 +20,7 @@ module.exports = {
     entry: {
         'app': [
             // 'babel-polyfill',
-            'webpack-dev-server/client?http://localhost:3000',
+            'webpack-dev-server/client?http://localhost:2000',
             'webpack/hot/only-dev-server',
             'react-hot-loader/patch',
             './src/index.js'
@@ -45,7 +45,7 @@ module.exports = {
             //   loader: "json-loader"
             // },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/,
                 // include: path.resolve(__dirname, './src'),

@@ -3,7 +3,9 @@
  *  eg. import { Root } from 'containers'
  */
 
-export IndexPage from './IndexPage/IndexPage.js';
+export RouterApp from '../Router.js';
+
+export IndexPage from './IndexPage/IndexPage.jsx';
 export NotFound from './NotFound/NotFound.js';
 export DevTools from './DevTools/DevTools.js';
 export Design from './Design/Design.js';
@@ -18,7 +20,6 @@ export LinkSet from './LinkSet/LinkSet.js';
 export Jump from './Jump/Jump.js';
 export Sider from './Sider/Sider.js';
 export Header from './Header/Header.js';
-export Router from './Router/Router.js';
 export Root from './Root/Root.js';
 export Flow from './Flow/Flow';
 export FlowChart from './FlowChart/FlowChart.js';
