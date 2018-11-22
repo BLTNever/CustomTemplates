@@ -43,8 +43,11 @@ class Flow extends Component {
         });
         const { flow } = this.props;
         // const history = flow.get('history');
-        const historyId = flow.get('historyId');
-        const source = flow.getIn(['history', historyId, 'source']);
+        // const historyId = flow.get('historyId');
+        const { history, historyId } = flow;
+        // const source = fromJS(flow).getIn(['history', historyId, 'source']);
+        const { source } = history[historyId];
+        const { nodes, edges } = source;
         // data = {
         //   nodes: [{
         //     x: 240,
@@ -55,7 +58,9 @@ class Flow extends Component {
         //   edges: [],
         // };
         // net.source(saveData.nodes, saveData.edges);
-        net.source(source.get('nodes').toJS(), source.get('edges').toJS());
+
+        net.source(nodes, edges);
+        // net.source(source.get('nodes').toJS(), source.get('edges').toJS());
         net.on('click', this.nodeClick);
         net.render();
         return net;
@@ -84,11 +89,10 @@ class Flow extends Component {
 
     // 按钮点击事件
     handleClick(id, name, event) {
-        console.log(id);
-        console.log(name);
-        console.log(event);
+
         const { flow } = this.props;
-        const activeNodeId = flow.get('activeNodeId');
+        console.log(flow);
+        const activeNodeId = fromJS(flow).get('activeNodeId');
         const activeNode = net.find(activeNodeId).get('model');
         if (!activeNode.label) {
             const activeNodeIndex = Number(activeNodeId.split('_')[1]);
@@ -262,6 +266,7 @@ class Flow extends Component {
 
     save() {
         let routers = new Map();
+        let router = {};
         const history = this.props.flow.get('history');
         const historyId = this.props.flow.get('historyId');
         const nodes = history.getIn([historyId, 'source', 'nodes']);
@@ -368,25 +373,36 @@ class Flow extends Component {
 
     render() {
         const { flow } = this.props;
-        const groups = flow.get('groups');
-        const history = flow.get('history');
-        const historyId = flow.get('historyId');
-        const buttons = flow.getIn(['history', historyId, 'buttons']);
+        // const groups = flow.get('groups');
+        // const history = flow.get('history');
+        // const historyId = flow.get('historyId');
+        // const buttons = flow.getIn(['history', historyId, 'buttons']);
+        const { groups, history, historyId } = flow;
+        const { buttons } = history[historyId];
         return (
             <div className={styles.normal}>
                 <div className={styles.left}>
                     <div className={styles.topBar}>流程组件</div>
-                    {groups.map((group, groupIndex) => {
-                        const groupId = group.get('id');
-                        const groupColor = group.get('color');
-                        const groupName = group.get('name');
-                        const groupButtons = buttons.filter(v => v.get('group') === groupId);
+                    {groups.map(group => {
+                        // const groupId = group.get('id');
+                        // const groupColor = group.get('color');
+                        // const groupName = group.get('name');
+                        // const groupButtons = buttons.filter(v => v.get('group') === groupId);
+                        const { id: groupId, color: groupColor, name: groupName } = group;
+                        let { values, entries } = Object;
+                        let groupButtons = [];
+                        for (let [key, value] of entries(buttons)) {
+                            if (value['group'] === groupId) {
+                                groupButtons.push(value)
+                            }
+                        }
+                        // const groupButtons = buttons.filter(item => item['group'] === groupId);
                         return (
                             <div key={groupId} className={styles.list} style={{ boxShadow: `1px 1px 10px 0px ${groupColor}` }}>
                                 <div className={styles.itemTitleBar} style={{ background: groupColor }}>{groupName}</div>
                                 {groupButtons.map((button, buttonIndex) => {
-                                    const buttonName = button.get('name');
-                                    return <Button key={buttonName} disabled={button.get('visible') !== true} onClick={this.handleClick.bind(this, buttonIndex, buttonName)}>{buttonName}</Button>;
+                                    const buttonName = button['name'];
+                                    return <Button key={buttonName} disabled={button['visible'] !== true} onClick={this.handleClick.bind(this, buttonIndex, buttonName)}>{buttonName}</Button>;
                                 })}
                             </div>
                         );
@@ -412,7 +428,7 @@ const mapStateToProps = (state) => {
     return {
         flow: state.get('flow'),
     };
-};
+}; 
 const mapDispatchToProps = dispatch => ({
     actions: bindActionCreators({
         updateTemplateData,

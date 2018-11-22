@@ -75,8 +75,8 @@ const data = {
     // order: config.order,
     groups: config.groups,
 };
-const initialState = fromJS(data);
-
+// const initialState = fromJS(data);
+const initialState = data;
 export const flow = handleActions({
     [flowAdd]: (state, action) => {
         return arrayPush(state, action);

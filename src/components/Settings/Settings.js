@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fromJS, Map } from 'immutable';
 import { Tabs } from 'antd';
 import { Toolkit, Configure } from '../../containers/index';
 import { updateTemplateData } from '../../actions';
